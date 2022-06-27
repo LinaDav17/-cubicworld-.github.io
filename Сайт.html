@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cubic World</title>
+  <link rel="shortcut icon" href="img/123.png" type="image/png">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-main="true">
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>CW</span>
+    </div>
+    <div id="about">
+      <a href="#"style="text-decoration: none; " title="Описание" onclick="slowScroll('#main')">Описание</a>
+      <a href="https://discord.gg/c4c7Ms5" style="text-decoration: none; ">Подать заявку</a>
+      <a href="#" style="text-decoration: none; " onclick="slowScroll('#overview')" title="Преимущества">Преимущества</a>
+      <a href="Правила.html" style="text-decoration: none; " title="Правила">Правила</a>
+      <a href="#"style="text-decoration: none; " onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+     
+    </div>
+    </div>
+  </header>
+  <div id="top">
+    <h1>Cubic World</h1>
+    <h3>Приватный ванильный сервер по Minecraft!</h3>
+  </div>
+
+  <div id="main">
+    <div class="intro">
+      <h2>Cubic World - приватный ванильный сервер по Minecraft</h2>
+      <span></span>
+    </div>
+    <div class="text">
+      <span>На нашем сервере есть свои государства и их союзы. То есть вы можете или вступить в чье-то государство и продвигать его, или создать свое собственное государство и управлять им!</span>
+      <br>
+      <span>Мы играем на тяжелой сложности! Поэтому знайте, ваше выживание не будет легким. Но не отчаевайтесь! Найдите себе друзей и играйте с ними! Ведь нашим Discord сервером это сделать легко!</span>
+      <br>
+    </div>
+  </div>
+
+  <div id="overview">
+    <h2>Почему надо играть именно у нас</h2>
+    <h4></h4>
+
+    <div class="img">
+      <img src="img/pyr.jpg" alt="err">
+      <span>Полностью ванильное выживание с вайтлистом </span>
+    </div>
+    <div class="img">
+      <img src="img/gorod.jpg" alt="err">
+      <span>Свой ресурс пак и карта спавна</span>
+    </div>
+  </div>
+  <div id="faq">
+    <div>
+      <span class="title">Поддержать проект</span><br>
+      <span class="heading">Проголосовать за наш сервер на мониторингах? Текст кликабельный</span>
+      <p><br><a href = "http://minecraftrating.ru/server/cubicworld/" style="text-decoration: none; font-family: 'Roboto Slab', serif; color: brown; font-size: 20px;"> MINECRAFTRATING </a>
+        <br>
+      <a href = "https://misterlauncher.org/server/cubicworld/" style="text-decoration: none; font-family: 'Roboto Slab', serif; color: brown; font-size: 20px;"> MisterLauncher </a>
+        <br>
+      <a href = "https://hotmc.ru/minecraft-server-199487" style="text-decoration: none; font-family: 'Roboto Slab', serif; color: brown; font-size: 20px;" >HOTMC</a></p>
+      <span class="heading">Поддержать сервер материально</span>
+      <p><br><a href = "https://qiwi.com/n/jenya705" style="text-decoration: none; font-family: 'Roboto Slab', serif; color: brown; font-size: 20px;">Qiwi </a></p>
+    </div>
+    <div>
+      <span class="title">Связь с нами</span>
+      <span class="heading">Discord сервера(обязательно для игры на сервере)</span>
+      <p><br><a href = "https://discord.gg/c4c7Ms5" style="text-decoration: none; font-family: 'Roboto Slab', serif; color: brown; font-size: 20px;" >Discord</a></p>
+      <span class="heading">Вконтакте</span>
+      <p><br><a href = "https://vk.com/cubicworldmc" style="text-decoration: none; font-family: 'Roboto Slab', serif; color: brown; font-size: 20px;" >Vkontakte</a></p>
+      
+    </div>
+    <div>
+      <span class="title">Гарантии</span><br>
+      <span class="heading">Проходка</span>
+      <p>На сервер можно попасть бесплатно, но нужно подать заявку в дискорд сервер</p>
+      <span class="heading">Донат</span>
+      <p>На сервере нет доната
+      <br>За поддержку сервера можно получить плюшки
+      </p>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+</body>
+</html>
