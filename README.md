@@ -1,1 +1,1 @@
-# -cubicworld-.github.io
+# cubicworld.github.io
